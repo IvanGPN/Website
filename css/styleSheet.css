@@ -54,7 +54,7 @@ ol > li:before {
   position: absolute;
   top: 0;
   left: 0;
-  color: rgb(172, 24, 24);
+  color: rgb(255, 14, 14);
 }
 
 .a-card {
@@ -90,6 +90,38 @@ h2 {
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.a-lab{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.a-lab:hover{
+  text-decoration: none;
+  text-decoration-color: rgb(214, 234, 255);
+  color: rgb(214, 234, 255);
+}
+
+.link-hover-solid a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link-hover-solid a:after {
+    background-color: #e6fffe;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.link-hover-solid a:hover:after,
+.link-hover-solid a:focus:after {
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
